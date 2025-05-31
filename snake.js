@@ -12,7 +12,7 @@ function getRandomInt(min, max) {
 
 function loop() {
   requestAnimationFrame(loop);
-  if (++count < 4) return;
+  if (++count < 8) return; // 속도 느리게 조정 (기존 4 -> 8)
   count = 0;
   ctx.clearRect(0, 0, canvas.width, canvas.height);
   snake.x += snake.dx;
